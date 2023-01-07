@@ -57,26 +57,23 @@ Program to design a half subtractor and full subtractor circuit and verify its t
 Developed by: ABRIN NISHA A
 RegisterNumber: 22008695
 
-VERILOG PROGRAMMING FOR HALF SUBTRACTOR:
+VERILOG PROGRAMMING FOR FULL SUBTRACTOR:
 ``
-module halfsub(A,B,diff,borrow);
-input A,B; output diff,borrow;
-wire X;
-xor(diff,A,B);
-not(X,A);
-and(borrow,X,B);
+module halfsubractor(A,B,Diff,Borrow);
+input A,B;
+output Diff,Borrow;
+assign Diff = (A ^ B);
+assign Borrow = (~A & B);
 endmodule
 ```
 VERILOG PROGRAMMING FOR FULL SUBTRACTOR:
 ```
-module fullsub(A,B,C,diff,borrow);
-input A,B,C;
+module fullsubtractor(a,b,c,diff,borrow);
+input a,b,c;
 output diff,borrow;
-wire p ;
-assign diff = A ^ B ^ C;
-not(p,A);
-assign borrow = ((p&B)|(p&C)|(B&C));
-endmodule 
+assign diff = (a^b^c);
+assign borrow = (~a&(b^c)|(b&c));
+endmodule
 ```
 
 ## Output:
