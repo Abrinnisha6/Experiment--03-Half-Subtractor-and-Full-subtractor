@@ -68,11 +68,11 @@ endmodule
 
 VERILOG PROGRAMMING FOR FULL SUBTRACTOR:
 
-module fullsubtractor(a,b,c,diff,borrow);
-input a,b,c;
+module fullsubtractor(A,B,C,diff,borrow);
+input A,B,C;
 output diff,borrow;
-assign diff = (a^b^c);
-assign borrow = (~a&(b^c)|(b&c));
+assign diff = (A^B^C);
+assign borrow = (~A&(B^C)|(B&C));
 endmodule
 ```
 
@@ -87,7 +87,7 @@ endmodule
 ![](HS%20LD.png)
 
 ## RTL realization:
-![](./)
+
 
 ## Timing diagram :
 ![](HS%20%20TD.png)
