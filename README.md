@@ -86,7 +86,7 @@ endmodule
 ## Logic symbol:
 ![](HS%20LD.png)
 
-## RTl realization:
+## RTL realization:
 ![](HS%20RTL.png)
 
 
