@@ -58,16 +58,16 @@ Developed by: ABRIN NISHA A
 RegisterNumber: 22008695
 
 VERILOG PROGRAMMING FOR HALF SUBTRACTOR:
-``
+
 module halfsubractor(A,B,Diff,Borrow);
 input A,B;
 output Diff,Borrow;
 assign Diff = (A ^ B);
 assign Borrow = (~A & B);
 endmodule
-```
+
 VERILOG PROGRAMMING FOR FULL SUBTRACTOR:
-```
+
 module fullsubtractor(a,b,c,diff,borrow);
 input a,b,c;
 output diff,borrow;
@@ -87,7 +87,7 @@ endmodule
 ![](HS%20LD.png)
 
 ## RTL realization:
-![](HS%20TT.png)
+![](./)
 
 ## Timing diagram :
 ![](HS%20%20TD.png)
